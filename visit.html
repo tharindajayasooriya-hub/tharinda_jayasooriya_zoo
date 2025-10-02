@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Visit - Lanka Pub Zoo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-visit-bg {
+            background-image: url('images/visit.jpg'); /* Image of a family/couple enjoying a safari or natural setting */
+            background-size: cover;
+            background-position: center;
+        }
+        .package-img-family { background-image: url('images/family.jpg'); } /* Family in nature */
+        .package-img-couple { background-image: url('images/couple.jpg'); } /* Romantic setting / glass house */
+        .package-img-normal { background-image: url('images/explorer.jpg'); } /* Person enjoying nature view */
+
+        .package-card-image {
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+   <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center">
+            
+            <a href="index.html" class="text-3xl font-extrabold text-green-700 hover:text-green-800 mb-3 md:mb-0">
+                Lanka Pub Zoo
+            </a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-lg text-gray-700 hover:text-green-600 font-medium transition duration-150">Home</a>
+                <a href="animals.html" class="text-lg text-gray-700 hover:text-green-600 font-medium transition duration-150">Our Animals</a>
+                <a href="visit.html" class="text-lg text-gray-700 hover:text-green-600 font-medium transition duration-150">Plan Your Visit</a>
+                <a href="aboutus.html" class="text-lg text-gray-700 hover:text-green-600 font-medium transition duration-150">About Us</a>
+                <a href="#contact" class="text-lg text-gray-700 hover:text-green-600 font-medium transition duration-150">Contact</a>
+            </nav>
+            <button class="md:hidden text-gray-700 text-2xl">
+                &#9776;
+            </button>
+
+            
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero-visit-bg h-[500px] flex items-center justify-center text-white relative">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="container mx-auto px-4 text-center z-10">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg tracking-wider">
+                    Plan Your Unforgettable Adventure
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 font-light drop-shadow-md">
+                    Choose the perfect package for your journey into the wild heart of Lanka Pub Zoo.
+                </p>
+            </div>
+        </section>
+
+        <section id="packages" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h2 class="text-4xl font-bold text-center text-green-700 mb-12">Our Exclusive Packages</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transform hover:scale-105 transition duration-300">
+                        <div class="package-card-image package-img-family"></div>
+                        <div class="p-6">
+                            <h3 class="text-3xl font-bold text-green-800 mb-2">Family Adventure Package</h3>
+                            <p class="text-gray-600 mb-4">Perfect for families seeking a memorable wild experience.</p>
+                            
+                            <div class="flex items-baseline mb-4">
+                                <span class="text-4xl font-extrabold text-green-700">Rs.3000</span>
+                                <span class="text-xl font-semibold text-gray-500 ml-2">/ per person</span>
+                            </div>
+                            <p class="text-sm text-gray-500 mb-4 line-through">Standard Price: Rs.3750</p>
+
+                            <div class="bg-yellow-100 text-yellow-800 text-lg font-bold px-4 py-2 rounded-lg text-center mb-4 border-2 border-yellow-300">
+                                Book Today & Get <span class="text-2xl">20% OFF!</span>
+                            </div>
+                            
+                            <ul class="text-gray-700 space-y-2 mb-6 text-lg">
+                                <li class="flex items-center"><svg class="w-6 h-6 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> For up to 6 Persons</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Safari Ride & Adventure Activities</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Breakfast, Lunch & Dinner Included</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Cottage with Private Pool Area</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 2 Master Bedrooms (Attached Bathrooms) + 1 Single Room</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Cozy Night Fire Camp</li>
+                            </ul>
+                            
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg text-xl transition duration-200">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transform hover:scale-105 transition duration-300">
+                        <div class="package-card-image package-img-couple"></div>
+                        <div class="p-6">
+                            <h3 class="text-3xl font-bold text-red-700 mb-2">Romantic Couple's Retreat</h3>
+                            <p class="text-gray-600 mb-4">An intimate getaway for two, with enhanced privacy.</p>
+                            
+                            <div class="flex items-baseline mb-4">
+                                <span class="text-4xl font-extrabold text-red-700">Rs.8000</span>
+                                <span class="text-xl font-semibold text-gray-500 ml-2">/ per person</span>
+                            </div>
+                            <p class="text-sm text-gray-500 mb-4 line-through">Standard Price: Rs.16000</p>
+
+                            <div class="bg-red-100 text-red-800 text-lg font-bold px-4 py-2 rounded-lg text-center mb-4 border-2 border-red-300">
+                                Book Today & Get a Massive <span class="text-2xl">50% OFF!</span>
+                            </div>
+                            
+                            <ul class="text-gray-700 space-y-2 mb-6 text-lg">
+                                <li class="flex items-center"><svg class="w-6 h-6 text-red-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> For 2 Persons</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-red-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Safari Ride & Adventure Activities</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-red-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Breakfast, Lunch & Romantic Dinner</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-red-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Exclusive Glass Cottage with Small Private Pool</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-red-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 1 Master Bedroom (Attached Bathroom)</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-red-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Highest Level of Privacy Assured</li>
+                            </ul>
+
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg text-xl transition duration-200">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transform hover:scale-105 transition duration-300">
+                        <div class="package-card-image package-img-normal"></div>
+                        <div class="p-6">
+                            <h3 class="text-3xl font-bold text-green-800 mb-2">Solo Explorer Package</h3>
+                            <p class="text-gray-600 mb-4">A complete experience for the independent traveler.</p>
+                            
+                            <div class="flex items-baseline mb-4">
+                                <span class="text-4xl font-extrabold text-green-700">Rs.4000</span>
+                                <span class="text-xl font-semibold text-gray-500 ml-2">/ per person</span>
+                            </div>
+                            <p class="text-sm text-gray-500 mb-4 line-through">Standard Price: Rs.5000</p>
+
+                            <div class="bg-yellow-100 text-yellow-800 text-lg font-bold px-4 py-2 rounded-lg text-center mb-4 border-2 border-yellow-300">
+                                Book Today & Get <span class="text-2xl">20% OFF!</span>
+                            </div>
+                            
+                            <ul class="text-gray-700 space-y-2 mb-6 text-lg">
+                                <li class="flex items-center"><svg class="w-6 h-6 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> For 1 Person</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Safari Ride & Adventure Activities</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Breakfast, Lunch & Dinner Included</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Single Room with Forest View</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 1 Single Bed, Attached Bathroom</li>
+                                <li class="flex items-center"><svg class="w-6 h-6 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Cozy Night Fire Camp</li>
+                            </ul>
+
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg text-xl transition duration-200">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-green-400">Lanka Pub Zoo</h3>
+                <p class="text-gray-400">
+                    A center for conservation and a home for incredible wildlife in Maho, Sri Lanka.
+                </p>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-green-400">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#about" class="text-gray-400 hover:text-green-300">About Us</a></li>
+                    <li><a href="animals.html" class="text-gray-400 hover:text-green-300">Our Animals</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-green-300">Careers</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-green-300">Support Conservation</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-green-400">Visit Info</h3>
+                <ul class="space-y-2">
+                    <li><a href="visit.html" class="text-gray-400 hover:text-green-300">Packages</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-green-300">Tickets & Prices</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-green-300">Daily Shows</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-green-300">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-green-400">Contact Us</h3>
+                <p class="text-gray-400">Location</p>
+                <p class="mb-3">Maho</p>
+                
+                <p class="text-gray-400">Phone</p>
+                <p class="mb-3"><a href="tel:0740452957" class="hover:text-green-300">0740452957</a></p>
+                
+                <p class="text-gray-400">Email</p>
+                <p><a href="mailto:lankazoo@gov.lk" class="hover:text-green-300">lankazoo@gov.lk</a></p>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 mt-8 pt-6 border-t border-gray-700 text-center">
+            <p class="text-gray-500 text-sm">&copy; 2025 Lanka Pub Zoo. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

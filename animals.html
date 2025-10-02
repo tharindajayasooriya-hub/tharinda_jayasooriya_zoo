@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Animals - Lanka Pub Zoo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .animal-detail-card-image {
+            background-size: cover;
+            background-position: center;
+            height: 250px; /* Or adjust as needed */
+            border-top-left-radius: 0.75rem; /* rounded-xl */
+            border-top-right-radius: 0.75rem; /* rounded-xl */
+        }
+        /* Specific images for demonstration */
+        .img-leopard { background-image: url('images/leo.jpg'); }
+        .img-elephant { background-image: url('images/ele.jpg'); }
+        .img-langur { background-image: url('images/lan.jpg'); }
+        .img-peacock { background-image: url('images/pea.jpg'); }
+        .img-bear { background-image: url('images/bear.jpg'); }
+        .img-greylangur{ background-image: url('images/grey.jpg');}
+        .img-lion{ background-image: url('images/lion.jpg');}
+        .img-deer{ background-image: url('images/deer.jpg');}
+        .img-buffalo{ background-image: url('images/buffalo.jpg');}
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center">
+            
+            <a href="index.html" class="text-3xl font-extrabold text-green-700 hover:text-green-800 mb-3 md:mb-0">
+                Lanka Pub Zoo
+            </a>
+            
+           <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-lg text-gray-700 hover:text-green-600 font-medium transition duration-150">Home</a>
+                <a href="animals.html" class="text-lg text-gray-700 hover:text-green-600 font-medium transition duration-150">Our Animals</a>
+                <a href="visit.html" class="text-lg text-gray-700 hover:text-green-600 font-medium transition duration-150">Plan Your Visit</a>
+                <a href="aboutus.html" class="text-lg text-gray-700 hover:text-green-600 font-medium transition duration-150">About Us</a>
+                <a href="#contact" class="text-lg text-gray-700 hover:text-green-600 font-medium transition duration-150">Contact</a>
+            </nav>
+            <button class="md:hidden text-gray-700 text-2xl">
+                &#9776;
+            </button>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="py-16 bg-gradient-to-br from-green-100 to-white">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-5xl font-extrabold text-green-800 mb-4">Discover Our Amazing Animals</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Explore the diverse wildlife that calls Lanka Pub Zoo home. Learn about their habitats, diets, behaviors, and our conservation efforts.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="animal-detail-card-image img-leopard"></div>
+                        <div class="p-6">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-2">Sri Lankan Leopard</h2>
+                            <p class="text-gray-500 text-sm mb-4">Panthera pardus kotiya</p>
+                            <ul class="text-gray-700 space-y-2">
+                                <li><strong class="text-green-700">Age:</strong> Up to 12-15 years in the wild</li>
+                                <li><strong class="text-green-700">Diet:</strong> Carnivore (Deer, wild boar, monkeys)</li>
+                                <li><strong class="text-green-700">Behavior:</strong> Solitary and nocturnal, excellent climbers. An apex predator.</li>
+                                <li><strong class="text-green-700">Natural Places:</strong> Forests and scrublands across Sri Lanka, particularly dry zone.</li>
+                                <li><strong class="text-green-700">Conservation Status:</strong> Endangered</li>
+                            </ul>
+                            <button class="mt-6 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                                Sponsor This Animal
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="animal-detail-card-image img-elephant"></div>
+                        <div class="p-6">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-2">Asian Elephant</h2>
+                            <p class="text-gray-500 text-sm mb-4">Elephas maximus</p>
+                            <ul class="text-gray-700 space-y-2">
+                                <li><strong class="text-green-700">Age:</strong> 40-60 years in the wild</li>
+                                <li><strong class="text-green-700">Diet:</strong> Herbivore (Grasses, leaves, bark, fruits)</li>
+                                <li><strong class="text-green-700">Behavior:</strong> Highly intelligent and social, live in matriarchal herds. Known for their emotional depth.</li>
+                                <li><strong class="text-green-700">Natural Places:</strong> Grasslands and forests throughout Asia.</li>
+                                <li><strong class="text-green-700">Conservation Status:</strong> Endangered</li>
+                            </ul>
+                            <button class="mt-6 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                                Sponsor This Animal
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="animal-detail-card-image img-langur"></div>
+                        <div class="p-6">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-2">Purple-Faced Langur</h2>
+                            <p class="text-gray-500 text-sm mb-4">Semnopithecus vetulus</p>
+                            <ul class="text-gray-700 space-y-2">
+                                <li><strong class="text-green-700">Age:</strong> Up to 20 years</li>
+                                <li><strong class="text-green-700">Diet:</strong> Herbivore/Folivore (Leaves, fruits, flowers)</li>
+                                <li><strong class="text-green-700">Behavior:</strong> Arboreal, social primates. Endemic to Sri Lanka.</li>
+                                <li><strong class="text-green-700">Natural Places:</strong> Wet zone forests of Sri Lanka.</li>
+                                <li><strong class="text-green-700">Conservation Status:</strong> Endangered</li>
+                            </ul>
+                            <button class="mt-6 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                                Sponsor This Animal
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="animal-detail-card-image img-peacock"></div>
+                        <div class="p-6">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-2">Indian Peafowl</h2>
+                            <p class="text-gray-500 text-sm mb-4">Pavo cristatus</p>
+                            <ul class="text-gray-700 space-y-2">
+                                <li><strong class="text-green-700">Age:</strong> 10-25 years</li>
+                                <li><strong class="text-green-700">Diet:</strong> Omnivore (Grains, insects, fruits, small reptiles)</li>
+                                <li><strong class="text-green-700">Behavior:</strong> Known for elaborate courtship display of males. Found in open forestlands.</li>
+                                <li><strong class="text-green-700">Natural Places:</strong> Native to the Indian subcontinent, also found in Sri Lanka.</li>
+                                <li><strong class="text-green-700">Conservation Status:</strong> Least Concern</li>
+                            </ul>
+                            <button class="mt-6 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                                Sponsor This Animal
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="animal-detail-card-image img-bear"></div>
+                        <div class="p-6">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-2">Sri Lankan Sloth Bear</h2>
+                            <p class="text-gray-500 text-sm mb-4">Melursus ursinus inornatus</p>
+                            <ul class="text-gray-700 space-y-2">
+                                <li><strong class="text-green-700">Age:</strong> Up to 20 years</li>
+                                <li><strong class="text-green-700">Diet:</strong> Omnivore (Insects, fruits, honey, roots)</li>
+                                <li><strong class="text-green-700">Behavior:</strong> Nocturnal, dig for insects with long claws, known for loud feeding noises.</li>
+                                <li><strong class="text-green-700">Natural Places:</strong> Dry zone forests of Sri Lanka.</li>
+                                <li><strong class="text-green-700">Conservation Status:</strong> Vulnerable</li>
+                            </ul>
+                            <button class="mt-6 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                                Sponsor This Animal
+                            </button>
+                        </div>
+                    </div>
+
+                     <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="animal-detail-card-image img-deer"></div>
+                        <div class="p-6">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-2">Spotted Deer (Chital)</h2>
+                            <p class="text-gray-500 text-sm mb-4">Axis axis</p>
+                            <ul class="text-gray-700 space-y-2">
+                                <li><strong class="text-green-700">Age:</strong> 8-12 years</li>
+                                <li><strong class="text-green-700">Diet:</strong>Herbivore (Grasses, leaves, fruits, agricultural crops)</li>
+                                <li><strong class="text-green-700">Behavior:</strong> Highly gregarious, living in large mixed-sex herds. Active primarily in the morning and late afternoon.</li>
+                                <li><strong class="text-green-700">Natural Places:</strong> Found in forests, grasslands, and open woodlands across the Indian subcontinent, including Sri Lanka.</li>
+                                <li><strong class="text-green-700">Conservation Status:</strong>Least Concern</li>
+                            </ul>
+                            <button class="mt-6 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                                Sponsor This Animal
+                            </button>
+                        </div>
+                    </div>
+
+                     <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="animal-detail-card-image img-lion"></div>
+                        <div class="p-6">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-2">Lion</h2>
+                            <p class="text-gray-500 text-sm mb-4">Panthera leo</p>
+                            <ul class="text-gray-700 space-y-2">
+                                <li><strong class="text-green-700">Age:</strong> 10-14 years in the wild</li>
+                                <li><strong class="text-green-700">Diet:</strong>Carnivore (Large ungulates like wildebeest, zebra, buffalo, antelope)</li>
+                                <li><strong class="text-green-700">Behavior:</strong> Highly social, living in prides. Females do most of the hunting. Roars can be heard up to 8 km away.</li>
+                                <li><strong class="text-green-700">Natural Places:</strong> Savannas, grasslands, and open woodlands of Sub-Saharan Africa and a small population in India (Asiatic Lion).</li>
+                                <li><strong class="text-green-700">Conservation Status:</strong> Vulnerable</li>
+                            </ul>
+                            <button class="mt-6 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                                Sponsor This Animal
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="animal-detail-card-image img-buffalo"></div>
+                        <div class="p-6">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-2">Wild Water Buffalo</h2>
+                            <p class="text-gray-500 text-sm mb-4">Bubalus arnee</p>
+                            <ul class="text-gray-700 space-y-2">
+                                <li><strong class="text-green-700">Age:</strong> 20-25 years</li>
+                                <li><strong class="text-green-700">Diet:</strong> Herbivore (Mainly grasses and aquatic plants)</li>
+                                <li><strong class="text-green-700">Behavior:</strong>  Gregarious, living in herds. Spend much time near water sources. Males often live solitarily or in small bachelor groups.</li>
+                                <li><strong class="text-green-700">Natural Places:</strong> Wetlands, marshes, floodplains, and dense grasslands in parts of India, Nepal, Bhutan, Thailand, and Cambodia.</li>
+                                <li><strong class="text-green-700">Conservation Status:</strong>Endangered</li>
+                            </ul>
+                            <button class="mt-6 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                                Sponsor This Animal
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="animal-detail-card-image img-greylangur"></div>
+                        <div class="p-6">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-2">Grey Langur (Hanuman Langur)</h2>
+                            <p class="text-gray-500 text-sm mb-4">Semnopithecus entellus</p>
+                            <ul class="text-gray-700 space-y-2">
+                                <li><strong class="text-green-700">Age:</strong>  18-25 years</li>
+                                <li><strong class="text-green-700">Diet:</strong> Herbivore (Leaves, fruits, flowers, buds, bark, occasionally insects)</li>
+                                <li><strong class="text-green-700">Behavior:</strong>Diurnal, highly social, live in troops with complex hierarchies. Excellent climbers and leapers.</li>
+                                <li><strong class="text-green-700">Natural Places:</strong>Widely distributed across the Indian subcontinent, including Sri Lanka's dry zone forests, semi-arid plains, and even urban areas.</li>
+                                <li><strong class="text-green-700">Conservation Status:</strong>Least Concern(though some subspecies may be more threatened)</li>
+                            </ul>
+                            <button class="mt-6 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                                Sponsor This Animal
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-green-400">Lanka Pub Zoo</h3>
+                <p class="text-gray-400">
+                    A center for conservation and a home for incredible wildlife in Maho, Sri Lanka.
+                </p>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-green-400">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#about" class="text-gray-400 hover:text-green-300">About Us</a></li>
+                    <li><a href="animals.html" class="text-gray-400 hover:text-green-300">Our Animals</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-green-300">Careers</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-green-300">Support Conservation</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-green-400">Visit Info</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-green-300">Tickets & Prices</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-green-300">Daily Shows</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-green-300">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-green-400">Contact Us</h3>
+                <p class="text-gray-400">Location</p>
+                <p class="mb-3">Maho</p>
+                
+                <p class="text-gray-400">Phone</p>
+                <p class="mb-3"><a href="tel:0740452957" class="hover:text-green-300">0740452957</a></p>
+                
+                <p class="text-gray-400">Email</p>
+                <p><a href="mailto:lankazoo@gov.lk" class="hover:text-green-300">lankazoo@gov.lk</a></p>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 mt-8 pt-6 border-t border-gray-700 text-center">
+            <p class="text-gray-500 text-sm">&copy; 2025 Lanka Pub Zoo. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
